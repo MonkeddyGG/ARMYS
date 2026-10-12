@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMYS Maquinaria y Soldadura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">ARMYS<span>.</span></div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#cotizacion">Cotización</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>ARMYS Maquinaria y Soldadura</h1>
+            <p>La máxima eficiencia en tu obra</p>
+            <a href="#cotizacion" class="btn-primary">Cotizar Ahora</a>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <div class="container nosotros-grid">
+            <div class="nosotros-text">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos un proveedor de equipos comerciales e industriales. Actuamos como representantes de marcas
+                    especializadas de equipos para construcción, maquinaria eléctrica y de combustión además de
+                    soldadura de la más alta calidad. Brindamos el respaldo que necesitas en cada proyecto.</p>
+                <a href="#servicios" class="btn-secondary">Conoce más</a>
+            </div>
+            <div class="nosotros-image">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Ingenieros en construcción">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Maquinaria Ligera">
+                    <div class="service-content">
+                        <h3>Maquinaria Ligera</h3>
+                        <p>Ofrecemos precio preferencial para colonias y municipios. Equipos listos para operar.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1534234771239-2ce11e389d38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Andamios de construcción">
+                    <div class="service-content">
+                        <h3>Andamios</h3>
+                        <p>Venta y renta de andamios para cualquier tipo de obra o proyecto. Seguridad y resistencia.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Revolvedora de cemento">
+                    <div class="service-content">
+                        <h3>Revolvedoras</h3>
+                        <p>Revolvedoras en venta, ideales para asegurar la máxima eficiencia en tu obra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cotizacion">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-image">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Trabajo de soldadura">
+                </div>
+                <div class="form-container">
+                    <h2>Solicita tu Cotización</h2>
+                    <p class="form-subtitle">Déjanos tus datos y te contactaremos a la brevedad.</p>
+                    <form id="quoteForm">
+                        <div class="form-group">
+                            <input type="text" id="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="servicio" required>
+                                <option value="" disabled selected>Selecciona un equipo o servicio</option>
+                                <option value="maquinaria">Maquinaria Ligera</option>
+                                <option value="andamios">Andamios</option>
+                                <option value="revolvedoras">Revolvedoras</option>
+                                <option value="soldadura">Equipos de Soldadura</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" rows="4" placeholder="Detalles de tu proyecto..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary form-btn">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion">
+        <div class="container">
+            <h2>Nuestra Ubicación</h2>
+            <p class="location-text">Encuéntranos en: Daniel Soto #738, Col. María Luisa, San Juan Bautista Tuxtepec,
+                Mexico, 68310</p>
+            <div class="map-responsive">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.7578335962086!2d-96.1265886!3d18.0827284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c3e6f9d2a3a1f7%3A0x123456789abcdef!2sDaniel%20Soto%20738%2C%20Mar%C3%ADa%20Luisa%2C%2068310%20San%20Juan%20Bautista%20Tuxtepec%2C%20Oax.!5e0!3m2!1ses!2smx!4v1690000000000!5m2!1ses!2smx"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>ARMYS Maquinaria y Soldadura</h3>
+                <p>Teléfono: 221 257 5572</p>
+                <p>Email: contacto@armuysgroup.com</p>
+            </div>
+            <div class="footer-social">
+                <p>Síguenos en nuestras redes sociales para conocer más de nuestros proyectos.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ARMYS Maquinaria y Soldadura. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
